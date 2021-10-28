@@ -6,7 +6,7 @@
 /*   By: bledda <bledda@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/24 00:45:41 by bledda            #+#    #+#             */
-/*   Updated: 2021/10/28 17:06:39 by bledda           ###   ########.fr       */
+/*   Updated: 2021/10/28 17:10:14 by bledda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,8 +53,6 @@ static void	convertFolder(const char *folder, const char *res)
 
 static void	convertFile(const char *file, const char *res)
 {
-	DIR				*dr;
-	struct dirent	*en;
 	string			tmp;
 	string			xpm;
 	string			command;
