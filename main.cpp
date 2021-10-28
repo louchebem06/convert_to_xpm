@@ -6,7 +6,7 @@
 /*   By: bledda <bledda@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/24 00:45:41 by bledda            #+#    #+#             */
-/*   Updated: 2021/10/28 17:10:14 by bledda           ###   ########.fr       */
+/*   Updated: 2021/10/28 17:13:00 by bledda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,9 +73,9 @@ int	main(int ac, char **av)
 		cerr << "<Folder or files> <1280x720> [Flags FILE or FOLDER]" << endl;
 		return (1);
 	}
-	if (!strcmp(av[3], "FILES"))
+	if (!strcmp(av[3], "FILE"))
 		convertFile(av[1], av[2]);
-	else
+	else if (!strcmp(av[3], "FOLDER"))
 		convertFolder(av[1], av[2]);
 	return(0);
 }
