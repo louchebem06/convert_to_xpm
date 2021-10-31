@@ -6,7 +6,7 @@
 /*   By: bledda <bledda@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/24 00:45:41 by bledda            #+#    #+#             */
-/*   Updated: 2021/10/28 17:13:00 by bledda           ###   ########.fr       */
+/*   Updated: 2021/10/31 12:56:03 by bledda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ static void	convertFile(const char *file, const char *res)
 
 	xpm = tmp = file;
 	resolution = res;
-	xpm.replace(xpm.find("."), 4, ".xpm");
+	xpm.replace(xpm.rfind("."), 4, ".xpm");
 	cout << tmp << " >> " << xpm << endl;
 	command = "convert "+tmp+" -geometry "+resolution+" -colors 216 "+xpm;
 	system(command.c_str());
